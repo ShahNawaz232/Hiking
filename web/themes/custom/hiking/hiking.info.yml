@@ -1,0 +1,28 @@
+name: Hiking
+type: theme
+description: 'My first hiking theme.'
+core: 8.x
+
+libraries:
+  - hiking/global-styling
+
+#stylesheets-remove:
+#  - core/themes/stable/css/system/components/tree-child.module.css
+
+regions:
+ navbar_brand: Brand
+ navbar: Navigation
+ search: Search
+ content: Content
+ full_middle: Full Middle
+ sidebar_first: Sidebar First
+ two_col_first: Two Col First
+ second_full_middle: Second Full Middle
+ sidebar_second: Sidebar Second
+ third_full_middle: Third Full Middle
+ second_last_footer: Second Last Footer
+ footer_first: footer first
+ footer_second: Footer Second
+ footer_third: Footer Third
+ footer_fourth: Footer Fourth
+ footer: Footer

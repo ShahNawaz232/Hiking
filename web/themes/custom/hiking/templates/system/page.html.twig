@@ -1,0 +1,82 @@
+ 
+<nav class="navbar navbar-expand-lg navbar-light bg-light logo">
+ 
+ {% if page.navbar_brand %}
+   {{ page.navbar_brand }}
+   {% endif %}
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+ 
+  <div class="collapse navbar-collapse mr-sm-2" id="navbarSupportedContent">
+          {{ page.navbar }}
+          
+          <div class="col-md-2">{{ page.search }}</div>
+        </div>
+</nav>
+
+  
+  <div>
+    
+     {{ page.content }}
+</div>
+  
+ 
+
+
+<!--<div class="row">-->
+
+ {{ page.full_middle }}
+<!--     </div>-->
+<div class="container">
+<!--    <div class="col-md-12">-->
+     
+
+ {{ page.sidebar_first }}
+       
+      
+      
+<!--   </div>-->
+ </div>
+
+<!-- <div class="row">-->
+   
+   {{ page.two_col_first }}
+<!--</div>-->
+<!--  <div class="row">-->
+   {{ page.second_full_middle }}
+<!--
+   
+ </div>
+-->
+ 
+ <div class="container">
+   {{ page.sidebar_second }}
+   {{ page.third_full_middle }}
+ </div>
+  
+ {{ page.second_last_footer }}
+  
+ <div class="col-md-12">
+<div class="row footer__row">
+<div class="col-md-6 custom__class">
+ 
+  {{ page.footer_first }}
+</div>
+    <div class="col-md-6">
+     <div class="row">
+     <div class="col-md-4">
+         {{ page.footer_second }}
+     </div>
+     <div class="col-md-4">
+         {{ page.footer_third }}
+       
+     </div>
+     <div class="col-md-4">
+         {{ page.footer_fourth }}
+     </div>
+      </div>
+      </div>
+      </div>
+</div>
+      {{ page.footer }}

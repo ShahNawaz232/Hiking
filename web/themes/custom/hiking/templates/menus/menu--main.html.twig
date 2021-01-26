@@ -1,0 +1,36 @@
+<div class="collapse navbar-collapse" id="navbarSupportedContent">
+  <ul class="navbar-nav mr-auto menu">
+   
+    {% for item in items %}
+      {% if item.is_expanded %}
+        <li class="nav-item dropdown down-menu">
+          <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            {{ item.title }}
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            {% for subitem in item.below %}
+              <a class="dropdown-item" href="{{ subitem.url }}">{{ subitem.title }}</a>
+            {% endfor %}
+          </div>
+        </li>
+      {% else %}
+        <li class="nav-item">
+          <a class="nav-link" href="{{ item.url }}" tabindex="-1" aria-disabled="true">{{ item.title }}</a>
+        </li>
+      {% endif %}
+    {% endfor %}
+    </ul>
+{%
+  set classes = [
+    has_parent ? 'js-form-wrapper',
+    has_parent ? 'form-wrapper',
+  ]
+%}
+<div{{ attributes.addClass(classes) }}>{{ children }}</div>
+
+<!--
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2 bor_search" type="search" placeholder="Search" aria-label="Search"><i class="glyphicon glyphicon-search"></i>
+    </form>
+-->
+</div>

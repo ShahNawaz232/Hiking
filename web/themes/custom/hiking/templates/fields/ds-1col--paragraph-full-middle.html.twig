@@ -1,0 +1,35 @@
+ 
+ {% if content.field_full_middle_conditions.0['#markup']|render == "False" %}
+  <div class="full-middle-title">
+    <bolder>{{ content.field_full_middle_title }} </bolder>
+
+  </div>
+
+   <div class="full-middle-description col-md-5">
+   
+{{ content.field_full_middle_description }}
+        </div>
+
+
+
+{% else %}
+
+<div class="full-middle-wrapper">
+  <div class="full-mdiddle-img img">
+   {{ content.field_full_middle_image }}
+</div>
+
+<div class="full-middle-upper-text">
+<div class="full-middle-title2">
+{{ content.field_full_middle_title }}
+
+  </div>
+
+
+   <div class="full-middle-description2 col-md-8">
+   
+{{ content.field_full_middle_description }}
+        </div>
+</div>
+</div>
+{% endif %}

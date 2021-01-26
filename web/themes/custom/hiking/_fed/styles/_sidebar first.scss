@@ -1,0 +1,57 @@
+.card-body{
+  color: white;
+ 
+  background: #7f7770;
+  width: auto;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+  
+    @include breakpoint(desktop){
+    width: 70%;
+  height: auto;
+  font-size: 10px;
+          display: block;
+    margin-left: -5px;
+}
+  
+//  @media only screen and(width: 768px){
+//    margin-left: -30px;
+//  }
+   @include breakpoint(laptop){
+     width: 75%;
+       display: block;
+       margin-left: 0px;
+}
+     @include breakpoint(mobile){
+     width: 95%;
+       display: block;
+//       margin:auto;
+       margin-left: -10px;
+}
+
+}
+.sidebar_f_img img{
+  width: 100%;
+  height: 50%;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  @include breakpoint(desktop){
+    width: 70%;
+  height: auto;
+    display: block;
+    margin-left: -5px;
+  }
+  
+   @include breakpoint(laptop){
+     width: 75%;
+       display: block;
+         margin-left: 0px;
+}
+    @include breakpoint(mobile){
+     width: 95%;
+       display: block;
+//       margin:auto;
+       margin-left: -10px;
+}
+  
+}

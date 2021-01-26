@@ -1,0 +1,255 @@
+.content-img img{
+  position: relative;
+  width: 100%;
+//  height: 100%;
+  @include breakpoint(desktop){
+    width: 100%;
+    height: 550px;
+  }
+  @include breakpoint(laptop){
+    width: 100%;
+    height: 350px;
+  }
+   @include breakpoint(tablet){
+    width: 100%;
+    height: 320px;
+  }
+  @include breakpoint(mobile){
+    width: 100%;
+    height: 300px;
+    
+    
+  }
+}
+.content-wrapper{
+     position: relative;
+      
+    .content-upper-text{
+    position: absolute;
+    top: 140px;
+    margin-left: 14px;
+       @include breakpoint(desktop){
+          margin-top: -50px;
+      }
+       @include breakpoint(laptop){ margin-top: -80px;}
+      @include breakpoint(tablet){ margin-top: -80px;}
+               @media screen 
+                 and (min-width: 391px) 
+                 and (max-width: 480px){
+                   margin-top: -80px;
+      }
+      @include breakpoint(mobile){
+        margin-top: -80px;
+      }
+      
+    
+  .content_title{
+    color: #deb37e;
+    font-size: 50px;
+    font-family: sans-serif;
+    margin-left: 83px;
+    
+    @include breakpoint(desktop){
+      font-size: 25px;
+      top: -25px;
+      margin-left: 83px;
+      width: 30%;
+    }
+    
+    @include breakpoint(laptop){
+     font-size: 24px;
+      top: -30px;
+      margin-left: 0px;
+      width: 50%;
+    }
+      @include breakpoint(tablet){
+      font-size: 20px;
+      top: -90px;
+      margin-left: 0px;
+      width: 50%;
+    }
+    
+          @media screen 
+  and (min-width: 391px) 
+  and (max-width: 480px){
+     font-size: 18px;
+      top: -40px;
+      margin-left: -10px;
+}
+  
+    
+    @include breakpoint(mobile){
+     font-size: 14px;
+      top: -40px;
+      margin-left: 7px;
+    }
+  }
+      
+  
+  .content-text{
+    color: #54524f;
+    font-size: 25px;
+    margin-left: 100px;
+      @include breakpoint(desktop){
+      font-size: 12px;
+      margin-top: -30px;
+      margin-left: 100px;
+    }
+    
+     @include breakpoint(laptop){
+      font-size: 11px;
+      margin-top: -35px;
+      margin-left: 12px;
+    }
+  
+     @include breakpoint(tablet){
+      font-size: 10px;
+       margin-top: -90px;
+      margin-left: 15px;
+      width: 50%;
+    }
+           @media screen 
+  and (min-width: 391px) 
+  and (max-width: 480px){
+     font-size: 10px;
+      margin-top: -40px;
+      margin-left: 3px;
+}
+  
+ @include breakpoint(mobile){
+     font-size: 7px;
+      margin-top: -40px;
+      margin-left: 20px;
+//      width: 50%;
+ 
+    }
+     
+  }
+  .content_link {
+//    color: #54524f;
+    margin-top: 35px;
+    margin-left: 95px;
+    background-color: white;
+    border-radius: 100px;
+//    padding: 5px;
+  
+     @include breakpoint(desktop){
+//      font-size: 15px;
+         width: 8%;
+       margin-left: 90px;
+       
+    }
+   @media screen 
+  and (min-width: 768px) 
+  and (max-width: 873px){
+    
+    width: 12%;
+    
+    
+}
+    @include breakpoint(laptop){
+      margin-left: 15px;
+      padding: 0px;
+      margin-top: 10px;
+        width: 15%;
+    }
+    @include breakpoint(tablet){
+      margin-left: 15px;
+      margin-top: -10px;
+//      width: 16%;
+      padding: 0px;
+     
+      
+    }
+           @media screen 
+  and (min-width: 391px) 
+  and (max-width: 480px){
+     font-size: 14px;
+      top: -40px;
+      margin-left: 7px;
+}
+  
+    @include breakpoint(mobile){
+    margin-left: 15px;
+     padding: -5px;
+      margin-top: 5px;
+     
+          width: 15%;
+    }
+  & a{
+     color: #54524f;
+    font-size: 14px;
+    width: 17%;
+    text-decoration: none;
+       @include breakpoint(desktop){
+         font-size: 8px;
+        
+      }
+      @include breakpoint(laptop){
+       margin-left: 0px;
+        font-size: 8px;
+        
+      }
+          @include breakpoint(tablet){
+      margin-top: 20px;
+//            margin-left: -50px;
+            font-size: 7px;
+            
+    }
+         
+          @include breakpoint(mobile){
+            font-size: 7px;
+            margin-left: -2px;
+            padding: 0px;
+         
+    }
+     
+     }
+    }
+
+  .content_body{
+    color: #54524f;
+    margin-left: 86px;
+    margin-top: 20px;
+     @include breakpoint(desktop){
+    width: 60%;
+       font-size: 14px;
+       margin-left: 80px;
+       margin-top: 0px;
+    }
+    
+    @include breakpoint(laptop){
+       width: 50%;
+       font-size: 12.5px;
+       margin-left: 3px;
+       margin-top: 10px;
+    }
+    
+     @include breakpoint(tablet){
+     width: 50%;
+       font-size: 10px;
+       margin-left: 3px;
+       margin-top: 0px;
+    }
+
+           @media screen 
+  and (min-width: 391px) 
+  and (max-width: 480px){
+     font-size: 10px;
+      top: 0px;
+      margin-left: -9px;
+}
+  
+    
+     @include breakpoint(mobile){
+      font-size: 10px;
+       margin-top: 0px;
+       margin-left: 2px;
+       width: 55%;
+    }
+
+    }
+  }
+
+}
+

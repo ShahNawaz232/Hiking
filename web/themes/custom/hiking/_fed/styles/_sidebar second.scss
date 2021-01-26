@@ -1,0 +1,42 @@
+
+  
+
+.color-title{
+  margin-top: 60px;
+  color: #deb37e;
+  font-size: 30px;
+  margin-left: 18px;
+   @include breakpoint(desktop){
+    margin-left: 40px;
+  }
+   @include breakpoint(laptop){
+    margin-left: 30px;
+  }
+  @include breakpoint(tablet){
+    margin-left: 25px;
+  }
+  
+  @include breakpoint(mobile){
+    margin-left: 15px;
+  }
+  
+}
+.color-body{
+  color: #99928d;
+//margin-left: 105px;
+   @include breakpoint(desktop){
+    margin-left: 20px;
+  }
+   @include breakpoint(laptop){
+    margin-left: 15px;
+  }
+  @include breakpoint(tablet){
+    margin-left: 10px;
+  }
+  
+  @include breakpoint(mobile){
+    margin-left: 5px;
+  }
+}
+  
+

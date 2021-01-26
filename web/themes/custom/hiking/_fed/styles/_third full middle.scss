@@ -1,0 +1,104 @@
+.third-wrapper{
+  position: relative;
+  .third-full-middle-img img{
+   width: 100%;
+    @include breakpoint(desktop){
+       width: 100%;
+    }
+    @include breakpoint(laptop){
+       width: 100%;
+    }
+    @include breakpoint(tablet){
+       width: 100%;
+    }
+    @include breakpoint(mobile){
+      width: 100%;
+    }
+  }
+ 
+  .quote{
+    position: absolute;
+  text-align: center;
+  font-weight: bolder;
+  font-size: 150px;
+  font-style: italic;
+  
+    @include breakpoint(mobile){
+//      width: 100%;
+    
+      font-size: 100px;
+    }
+}
+  @media only screen and(width: 768px){
+    margin-left: 80px;
+    
+  }
+// span{
+//        position: absolute;
+//  text-align: center;
+//  font-weight: bolder;
+//  font-size: 150px;
+//  font-style: italic;
+//  }
+.third-upper{
+  position: absolute;
+  top: 200px;
+    font-weight: bolder;
+  text-align: center;
+  
+  third-full-middle-title{
+    @include breakpoint(mobile){
+      margin-left: 0px;
+    }
+  }
+  
+  .third-full-middle-icon{
+//    text-align: center;
+    margin-left: 180px;
+    
+    @include breakpoint(desktop){
+      margin-left: 150px;
+//       text-align: center;
+  }
+    @include breakpoint(laptop){
+      margin-left: 0px;
+//       text-align: center;
+  }
+    @include breakpoint(tablet){
+      margin-left: 0px;
+//       text-align: center;
+  }
+    @include breakpoint(mobile){
+      margin-left: 0px;
+       font-size: 12px;
+  }
+  }
+  .third-center{
+    margin-left: 220px;
+//      text-align: center;
+    font-size: 100px;
+       @include breakpoint(desktop){
+       font-size: 70px;
+      margin-left: 150px;
+//       text-align: center;
+    }
+     @include breakpoint(laptop){
+       font-size: 50px;
+      margin-left: 0px;
+//       text-align: center;
+    }
+     @include breakpoint(tablet){
+       font-size: 40px;
+      margin-left: 0px;
+       text-align: center;
+    }
+    @include breakpoint(mobile){
+       font-size: 20px;
+      margin-left: 0px;
+       text-align: center;
+    }
+         
+  }
+}
+ 
+}

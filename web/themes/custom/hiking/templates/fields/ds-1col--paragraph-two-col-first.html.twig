@@ -1,0 +1,67 @@
+<!--
+
+  <pre>
+  {{ content.field_two_col_condition.0['#markup'] }} 
+  
+</pre>
+-->
+<div lass="container">
+  <div class="col-md-12 col-sm-12">
+{% if content.field_two_col_condition.0['#markup']|render == 'False' %}
+  <div class="row mt-5">
+   <div class="col-md-6 col-sm-12 two_col_first_img">
+{{ content.	field_two_col_first_img }}
+</div>
+
+<div class="col-md-6 col-sm-12 two-col-uptext">
+  <div class="col-md-7 col-sm-12 two-col-title">
+   {{ content.field_two_col_first_title }} 
+    </div>
+    <div class="col-md-10 col-sm-12 two-col-mt">
+     <div class="two-col-body">
+  {{ content.field_two_col_first_description }}
+          </div>
+  <div class="col-md-5 col-sm-12 two-col-link">
+  <div class="two-col-link">
+  {{ content.field_two_col_first_link }} 
+  </div>
+      </div>
+    </div>
+    </div>
+  </div>
+</div>
+
+{% else %}
+
+
+ <div class="col-md-12 col-sm-12 ">
+
+  <div class="row">
+ 
+<div class="col-md-6 col-sm-12 two-col-uptext2">
+  <div class="col-md-7 col-sm-12 two-col-title2">
+  {{ content.field_two_col_first_title }} 
+    </div>
+    <div class="col-md-10 col-sm-12 two-col-mt">
+       <div class="two-col-body2">
+  {{ content.field_two_col_first_description }}
+  </div>
+ 
+   <div class="col-md-5 col-sm-12 two-col-link2">
+    <div class="two-col-link2">
+  {{ content.field_two_col_first_link }}
+      </div>
+    </div>
+  </div> 
+    </div>     
+     <div class="col-md-6 col-sm-12 two_col_first_img2">
+{{ content.	field_two_col_first_img }}
+</div>
+    
+ 
+   </div>
+    
+  </div>
+</div>
+
+{% endif %}

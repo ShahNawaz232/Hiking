@@ -1,0 +1,21 @@
+{% 
+set classes = [
+'block',
+'block-search',
+'container',
+'custom-searchform',
+]
+%}
+<div {{ attributes.addClass(classes) }}>
+  {{ title_prefix }}
+  {% if label %}
+  <h3 {{ title_attributes }} class="mycustomlabel">{{ label }}</h3>
+  {% endif %}
+{% block content %}
+{{ content }}
+<form action="">
+  <input type="text" name="input">
+</form>
+<button class="search_button"><i class="fas fa-search"></i></button>
+{% endblock %}
+</div>

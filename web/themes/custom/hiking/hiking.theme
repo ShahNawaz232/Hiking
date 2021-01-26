@@ -1,0 +1,9 @@
+<?php 
+
+function hiking_preprocess_region(&$variables){
+
+$variables['region_class'] = theme_get_setting('region_class');
+
+}
+
+
